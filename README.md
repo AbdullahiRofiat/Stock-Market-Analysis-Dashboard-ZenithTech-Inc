@@ -1,5 +1,7 @@
 ## Stock Market Performance Dashboard – ZenithTech Inc. 
 
+![17756734571722170661399551476602](https://github.com/user-attachments/assets/df8eadc1-ff75-4ff3-afe3-cd2710c130fd)
+
 A Power BI dashboard developed as a simulated business case for ZenithTech Inc., designed to analyze stock price trends, trading volume behavior, and risk exposure using historical stock transaction data.
 
 
@@ -72,6 +74,7 @@ Average Daily Change (AVERAGE)
 ---
 
 ## Dashboard Features
+![17756734571722170661399551476602](https://github.com/user-attachments/assets/41191463-900e-4944-8796-c26fd35cadb1)
 
 KPI Cards: Highest Price, Lowest Price, Average Price, Total Volume, Average Daily Change.
 
