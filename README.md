@@ -42,11 +42,11 @@ Flagged anomalies, including the January 2022 price floor ($30.36) for context i
 
 ## Data Modeling
 
-Star Schema Design: Fact table (daily transactions) + dimensions (Date, Stock).
+* Star Schema Design: Fact table (daily transactions) + dimensions (Date, Stock).
 
-DIM_Date Table: Created via Power Query for full time intelligence coverage.
+* DIM_Date Table: Created via Power Query for full time intelligence coverage.
 
-Relationships: One-to-many, single-direction filter to ensure DAX measures calculate correctly.
+* Relationships: One-to-many, single-direction filter to ensure DAX measures calculate correctly.
 
 
 
@@ -54,20 +54,20 @@ Relationships: One-to-many, single-direction filter to ensure DAX measures calcu
 
 ## Key DAX Measures
 
-5-Day Moving Average (Moving_Avg_5) – Smooths daily volatility to reveal genuine trends:
+* 5-Day Moving Average (Moving_Avg_5) – Smooths daily volatility to reveal genuine trends:
 
 
-Moving_Avg_5 =
+* Moving_Avg_5 =
 AVERAGEX(
     DATESINPERIOD('DIM_Date'[Date], LASTDATE('DIM_Date'[Date]), -5, DAY),
     [Average Close Price]
 )
 
-Highest Price (MAX), Lowest Price (MIN), Average Price (AVERAGE)
+* Highest Price (MAX), Lowest Price (MIN), Average Price (AVERAGE)
 
-Total Volume (SUM)
+* Total Volume (SUM)
 
-Average Daily Change (AVERAGE)
+* Average Daily Change (AVERAGE)
 
 
 
@@ -77,13 +77,13 @@ Average Daily Change (AVERAGE)
 ![STOCK MARKET ANALYSIS DA](https://github.com/user-attachments/assets/65f95fb2-0cf4-4d16-826c-32282f9cb412)
 
 
-KPI Cards: Highest Price, Lowest Price, Average Price, Total Volume, Average Daily Change.
+* KPI Cards: Highest Price, Lowest Price, Average Price, Total Volume, Average Daily Change.
 
-Date Hierarchy Slicer: Drill-down from Year → Month → Day.
+* Date Hierarchy Slicer: Drill-down from Year → Month → Day.
 
-Line Chart: Close Price vs 5-Day Moving Average.
+* Line Chart: Close Price vs 5-Day Moving Average.
 
-Dual-Axis Chart: Trade Volume vs Close Price.
+* Dual-Axis Chart: Trade Volume vs Close Price.
 
 
 
@@ -91,13 +91,13 @@ Dual-Axis Chart: Trade Volume vs Close Price.
 
 ## Key Insights
 
-Bullish Trend (Feb–Apr 2022): 5-day moving average revealed a sustained uptrend.
+* Bullish Trend (Feb–Apr 2022): 5-day moving average revealed a sustained uptrend.
 
-Volume–Price Divergence: Early high volumes reflect selling pressure, not accumulation.
+* Volume–Price Divergence: Early high volumes reflect selling pressure, not accumulation.
 
-Hidden Risk: Average daily drift of –$8.81 indicates underlying risk despite peak prices.
+* Hidden Risk: Average daily drift of –$8.81 indicates underlying risk despite peak prices.
 
-Market Correction: May pullback aligns with profit-taking behavior post-rally.
+* Market Correction: May pullback aligns with profit-taking behavior post-rally.
 
 
 
@@ -105,15 +105,15 @@ Market Correction: May pullback aligns with profit-taking behavior post-rally.
 
 ## Recommendations
 
-Implement alerts for deviations >15% from moving average.
+* Implement alerts for deviations >15% from moving average.
 
-Segment volume analysis by market phase to clarify behavior.
+* Segment volume analysis by market phase to clarify behavior.
 
-Investigate January 2022 anomaly for data accuracy.
+* Investigate January 2022 anomaly for data accuracy.
 
-Add a market benchmark layer to separate stock-specific performance from market movements.
+* Add a market benchmark layer to separate stock-specific performance from market movements.
 
-Extend the analysis to 12–24 months for seasonal and year-on-year trends.
+* Extend the analysis to 12–24 months for seasonal and year-on-year trends.
 
 
 
@@ -121,15 +121,15 @@ Extend the analysis to 12–24 months for seasonal and year-on-year trends.
 
 ## Tools & Skills Demonstrated
 
-Power BI Desktop: KPI Cards, Line Charts, Dual-Axis Charts, Slicers
+* Power BI Desktop: KPI Cards, Line Charts, Dual-Axis Charts, Slicers
 
-Power Query: ETL, data cleaning, type validation, anomaly flagging
+* Power Query: ETL, data cleaning, type validation, anomaly flagging
 
-DAX: Time intelligence, moving averages, risk metrics
+* DAX: Time intelligence, moving averages, risk metrics
 
-Data Modeling: Star schema, dimensional modeling, performance optimization
+* Data Modeling: Star schema, dimensional modeling, performance optimization
 
-Business Communication: Executive KPI framing, investment risk storytelling, strategic recommendations
+* Business Communication: Executive KPI framing, investment risk storytelling, strategic recommendations
 
 [Check out the full project via this link](Stock_Analysis.pbix)
 
