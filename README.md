@@ -16,11 +16,11 @@ As a Data Analyst in a simulated scenario at ZenithTech Inc., I transformed 200,
 
 ## Business Objectives
 
-Track true price trends beneath daily market fluctuations.
+* Track true price trends beneath daily market fluctuations.
 
-Understand whether volume spikes indicate genuine market demand or sell pressure.
+* Understand whether volume spikes indicate genuine market demand or sell pressure.
 
-Quantify daily risk exposure to support informed portfolio and trading strategies.
+* Quantify daily risk exposure to support informed portfolio and trading strategies.
 
 
 
@@ -28,13 +28,13 @@ Quantify daily risk exposure to support informed portfolio and trading strategie
 
 ## Data Preparation & Cleaning
 
-Removed duplicates and standardized date formats for accurate time analysis.
+* Removed duplicates and standardized date formats for accurate time analysis.
 
-Handled missing values in Daily_Change to maintain trend integrity.
+* Handled missing values in Daily_Change to maintain trend integrity.
 
-Formatted numeric and currency fields correctly to enable Power BI calculations.
+* Formatted numeric and currency fields correctly to enable Power BI calculations.
 
-Flagged anomalies, including the January 2022 price floor ($30.36) for context in volatility analysis.
+* Flagged anomalies, including the January 2022 price floor ($30.36) for context in volatility analysis.
 
 
 
