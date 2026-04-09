@@ -1,9 +1,7 @@
 ## Stock Market Performance Dashboard – ZenithTech Inc. 
 
-![STOCK MARKET ANALYSIS DA](https://github.com/user-attachments/assets/ff3c5afc-1a40-460b-9aa4-f96beaf60c5a)
-
 A Power BI dashboard developed as a simulated business case for ZenithTech Inc., designed to analyze stock price trends, trading volume behavior, and risk exposure using historical stock transaction data.
-
+![STOCK MARKET ANALYSIS DA](https://github.com/user-attachments/assets/ff3c5afc-1a40-460b-9aa4-f96beaf60c5a)
 
 ---
 
