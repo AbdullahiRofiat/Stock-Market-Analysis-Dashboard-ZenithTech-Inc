@@ -131,5 +131,5 @@ Data Modeling: Star schema, dimensional modeling, performance optimization
 
 Business Communication: Executive KPI framing, investment risk storytelling, strategic recommendations
 
-[Check out the full project via this link]( 
+[Check out the full project via this link](Stock_Analysis.pbix)
 
